@@ -1,0 +1,678 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>私房菜做法 - 家常私房菜菜谱、做法步骤与选材技巧大全</title>
+<meta name="description" content="私房菜做法栏目整理家常私房菜的选材思路、调味方法、火候控制与详细步骤，涵盖荤素热菜、汤羹、凉拌与主食，帮助你在家做出有个人风味的私房菜。">
+<meta name="keywords" content="私房菜做法,私房菜菜谱,家常私房菜,私房菜步骤,私房菜选材,私房菜调味">
+<script type="text/javascript" src="https://cdn.bdwgg.com/mh.js"></script>
+<style>
+  :root{
+    --ink:#2b2118;
+    --ink-soft:#5c4b3c;
+    --paper:#fbf6ee;
+    --paper-2:#f4ebdd;
+    --line:#e2d5c2;
+    --accent:#b3452a;
+    --accent-2:#8a6a3b;
+    --green:#5c7a4a;
+    --radius:14px;
+    --shadow:0 6px 22px rgba(70,48,28,.09);
+  }
+  *{box-sizing:border-box;}
+  body{
+    margin:0;
+    font-family:"PingFang SC","Hiragino Sans GB","Microsoft YaHei","Source Han Sans SC",sans-serif;
+    background:var(--paper);
+    color:var(--ink);
+    line-height:1.75;
+    font-size:16px;
+  }
+  img{max-width:100%;display:block;}
+  a{color:inherit;text-decoration:none;}
+  h1,h2,h3{margin:0;line-height:1.35;font-weight:700;}
+  p{margin:0 0 1em;}
+  ul{margin:0;padding-left:1.2em;}
+
+  /* 顶部 */
+  .topbar{
+    background:#3a2c20;
+    color:#e8dccb;
+    font-size:13px;
+    letter-spacing:.02em;
+  }
+  .topbar-inner{
+    max-width:1180px;margin:0 auto;padding:8px 20px;
+    display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;
+  }
+  .topbar span{opacity:.85;}
+
+  header.site-header{
+    background:linear-gradient(180deg,#fffdf9 0%,var(--paper) 100%);
+    border-bottom:1px solid var(--line);
+  }
+  .header-inner{
+    max-width:1180px;margin:0 auto;padding:20px;
+    display:flex;align-items:center;justify-content:space-between;gap:24px;flex-wrap:wrap;
+  }
+  .brand{display:flex;align-items:center;gap:12px;}
+  .brand-mark{
+    width:46px;height:46px;border-radius:12px;
+    background:var(--accent);
+    color:#fff;font-size:20px;font-weight:700;
+    display:flex;align-items:center;justify-content:center;
+    box-shadow:0 4px 12px rgba(179,69,42,.28);
+  }
+  .brand-text b{display:block;font-size:19px;letter-spacing:.03em;}
+  .brand-text small{color:var(--ink-soft);font-size:12.5px;letter-spacing:.06em;}
+
+  nav.main-nav ul{
+    list-style:none;padding:0;margin:0;
+    display:flex;gap:6px;flex-wrap:wrap;
+  }
+  nav.main-nav a{
+    display:block;padding:8px 14px;border-radius:999px;
+    font-size:14.5px;color:var(--ink-soft);transition:.2s;
+  }
+  nav.main-nav a:hover{background:#f0e4d3;color:var(--accent);}
+
+  /* 首屏 */
+  .hero{
+    max-width:1180px;margin:0 auto;padding:38px 20px 8px;
+    display:grid;grid-template-columns:1.55fr 1fr;gap:34px;align-items:start;
+  }
+  .hero h1{
+    font-size:clamp(26px,4vw,40px);
+    letter-spacing:.01em;
+    margin-bottom:14px;
+  }
+  .hero h1 em{
+    font-style:normal;color:var(--accent);
+  }
+  .hero-lead{
+    color:var(--ink-soft);font-size:16.5px;max-width:60ch;
+  }
+  .hero-tags{display:flex;flex-wrap:wrap;gap:8px;margin:18px 0 22px;}
+  .hero-tags span{
+    background:#fff;border:1px solid var(--line);
+    padding:5px 13px;border-radius:999px;font-size:13.5px;color:var(--ink-soft);
+  }
+  .hero-actions{display:flex;gap:12px;flex-wrap:wrap;}
+  .btn{
+    display:inline-block;padding:11px 22px;border-radius:999px;
+    font-size:15px;font-weight:600;transition:.2s;border:1px solid transparent;
+  }
+  .btn-primary{background:var(--accent);color:#fff;box-shadow:0 6px 16px rgba(179,69,42,.25);}
+  .btn-primary:hover{background:#9c3a22;}
+  .btn-ghost{background:#fff;border-color:var(--line);color:var(--ink-soft);}
+  .btn-ghost:hover{border-color:var(--accent);color:var(--accent);}
+
+  .hero-side{
+    background:#fff;border:1px solid var(--line);border-radius:var(--radius);
+    padding:22px 22px 18px;box-shadow:var(--shadow);
+  }
+  .hero-side h2{font-size:17px;margin-bottom:12px;}
+  .hero-side h2::before{
+    content:"";display:inline-block;width:4px;height:15px;border-radius:2px;
+    background:var(--accent);margin-right:8px;vertical-align:-2px;
+  }
+  .hero-side ol{margin:0;padding-left:1.15em;color:var(--ink-soft);font-size:14.5px;}
+  .hero-side li{margin-bottom:9px;}
+  .hero-side li b{color:var(--ink);}
+
+  /* 通用区块 */
+  section.block{
+    max-width:1180px;margin:0 auto;padding:44px 20px 6px;
+  }
+  .block-head{
+    display:flex;align-items:flex-end;justify-content:space-between;
+    gap:16px;flex-wrap:wrap;margin-bottom:24px;
+    border-bottom:1px solid var(--line);padding-bottom:14px;
+  }
+  .block-head h2{font-size:23px;letter-spacing:.01em;}
+  .block-head h2 small{
+    display:block;font-size:13px;font-weight:400;color:var(--ink-soft);
+    letter-spacing:.08em;margin-top:5px;
+  }
+  .block-head p{color:var(--ink-soft);font-size:14px;margin:0;max-width:52ch;}
+
+  /* 分类导航 */
+  .cat-grid{
+    display:grid;grid-template-columns:repeat(4,1fr);gap:14px;
+  }
+  .cat-card{
+    background:#fff;border:1px solid var(--line);border-radius:var(--radius);
+    padding:18px 18px 16px;transition:.22s;
+  }
+  .cat-card:hover{transform:translateY(-3px);box-shadow:var(--shadow);border-color:#d9c6ac;}
+  .cat-card b{display:block;font-size:16px;margin-bottom:6px;}
+  .cat-card p{font-size:13.5px;color:var(--ink-soft);margin:0;}
+  .cat-card .cat-ico{
+    font-size:20px;margin-bottom:8px;display:block;
+  }
+
+  /* 菜谱列表 */
+  .recipe-grid{
+    display:grid;grid-template-columns:repeat(3,1fr);gap:18px;
+  }
+  .recipe-card{
+    background:#fff;border:1px solid var(--line);border-radius:var(--radius);
+    padding:20px;display:flex;flex-direction:column;transition:.22s;
+  }
+  .recipe-card:hover{box-shadow:var(--shadow);border-color:#d9c6ac;}
+  .recipe-card .tag{
+    align-self:flex-start;font-size:12px;letter-spacing:.06em;
+    background:var(--paper-2);color:var(--accent-2);
+    padding:3px 10px;border-radius:999px;margin-bottom:12px;
+  }
+  .recipe-card h3{font-size:17.5px;margin-bottom:8px;}
+  .recipe-card p{font-size:14px;color:var(--ink-soft);margin-bottom:14px;}
+  .recipe-card dl{
+    margin:0;font-size:13.5px;color:var(--ink-soft);
+    border-top:1px dashed var(--line);padding-top:12px;
+  }
+  .recipe-card dt{font-weight:600;color:var(--ink);margin-top:8px;}
+  .recipe-card dt:first-child{margin-top:0;}
+  .recipe-card dd{margin:2px 0 0;}
+
+  /* 步骤详解 */
+  .steps-wrap{
+    display:grid;grid-template-columns:1fr 1fr;gap:26px;
+  }
+  .step-item{
+    background:#fff;border:1px solid var(--line);border-left:4px solid var(--accent);
+    border-radius:0 var(--radius) var(--radius) 0;
+    padding:18px 20px;
+  }
+  .step-item b{display:block;font-size:16px;margin-bottom:6px;}
+  .step-item p{font-size:14px;color:var(--ink-soft);margin:0;}
+
+  /* 选材表格 */
+  .table-wrap{
+    overflow-x:auto;background:#fff;border:1px solid var(--line);
+    border-radius:var(--radius);
+  }
+  table{border-collapse:collapse;width:100%;min-width:620px;font-size:14.5px;}
+  th,td{padding:13px 16px;text-align:left;border-bottom:1px solid var(--line);}
+  th{background:var(--paper-2);font-weight:600;color:var(--ink);white-space:nowrap;}
+  td{color:var(--ink-soft);}
+  tbody tr:last-child td{border-bottom:none;}
+  tbody tr:hover td{background:#fdfaf5;}
+
+  /* 技巧列表 */
+  .tips{
+    display:grid;grid-template-columns:repeat(2,1fr);gap:16px;
+  }
+  .tip{
+    background:#fff;border:1px solid var(--line);border-radius:var(--radius);
+    padding:18px 20px;
+  }
+  .tip b{display:block;margin-bottom:6px;font-size:15.5px;}
+  .tip b::before{
+    content:"✓";color:var(--green);font-weight:700;margin-right:7px;
+  }
+  .tip p{font-size:14px;color:var(--ink-soft);margin:0;}
+
+  /* 侧栏式问答 */
+  .faq-layout{
+    display:grid;grid-template-columns:1fr 300px;gap:28px;align-items:start;
+  }
+  .faq-list{display:flex;flex-direction:column;gap:12px;}
+  details{
+    background:#fff;border:1px solid var(--line);border-radius:var(--radius);
+    padding:16px 20px;
+  }
+  details[open]{border-color:#d9c6ac;box-shadow:var(--shadow);}
+  summary{
+    cursor:pointer;font-weight:600;font-size:15.5px;list-style:none;
+    display:flex;justify-content:space-between;gap:12px;align-items:center;
+  }
+  summary::-webkit-details-marker{display:none;}
+  summary::after{
+    content:"+";color:var(--accent);font-size:19px;font-weight:400;flex:none;
+  }
+  details[open] summary::after{content:"–";}
+  details p{margin:12px 0 0;font-size:14.5px;color:var(--ink-soft);}
+
+  .side-note{
+    background:#fff;border:1px solid var(--line);border-radius:var(--radius);
+    padding:20px;box-shadow:var(--shadow);
+  }
+  .side-note h3{font-size:16px;margin-bottom:12px;}
+  .side-note ul{padding-left:1.1em;font-size:14px;color:var(--ink-soft);}
+  .side-note li{margin-bottom:9px;}
+
+  /* 页脚 */
+  footer.site-footer{
+    margin-top:56px;background:#3a2c20;color:#d9cbb8;
+    font-size:14px;
+  }
+  .footer-inner{
+    max-width:1180px;margin:0 auto;padding:36px 20px 22px;
+    display:grid;grid-template-columns:1.4fr 1fr 1fr;gap:28px;
+  }
+  .footer-inner h3{
+    font-size:15px;color:#fff;margin-bottom:12px;letter-spacing:.04em;
+  }
+  .footer-inner p{color:#b8a894;font-size:13.5px;margin:0 0 10px;}
+  .footer-inner ul{list-style:none;padding:0;margin:0;font-size:13.5px;}
+  .footer-inner li{margin-bottom:8px;}
+  .footer-inner a:hover{color:#fff;}
+  .footer-bottom{
+    border-top:1px solid rgba(255,255,255,.12);
+    text-align:center;padding:14px 20px;font-size:13px;color:#a2917d;
+  }
+
+  /* 响应式 */
+  @media (max-width:980px){
+    .hero{grid-template-columns:1fr;gap:24px;}
+    .cat-grid{grid-template-columns:repeat(2,1fr);}
+    .recipe-grid{grid-template-columns:repeat(2,1fr);}
+    .steps-wrap{grid-template-columns:1fr;}
+    .faq-layout{grid-template-columns:1fr;}
+    .footer-inner{grid-template-columns:1fr 1fr;}
+  }
+  @media (max-width:640px){
+    body{font-size:15.5px;}
+    .header-inner{padding:16px;}
+    nav.main-nav a{padding:7px 11px;font-size:14px;}
+    .cat-grid,.recipe-grid,.tips{grid-template-columns:1fr;}
+    section.block{padding:34px 16px 4px;}
+    .hero{padding:26px 16px 4px;}
+    .block-head h2{font-size:20px;}
+    .footer-inner{grid-template-columns:1fr;padding:28px 16px 18px;}
+  }
+</style>
+</head>
+<body>
+
+<div class="topbar">
+  <div class="topbar-inner">
+    <span>私房菜做法 · 家常风味的整理与分享</span>
+    <span>选材 · 调味 · 火候 · 摆盘</span>
+  </div>
+</div>
+
+<header class="site-header">
+  <div class="header-inner">
+    <div class="brand">
+      <div class="brand-mark">厨</div>
+      <div class="brand-text">
+        <b>家宴私房菜谱</b>
+        <small>把家常菜做出自己的味道</small>
+      </div>
+    </div>
+    <nav class="main-nav" aria-label="主导航">
+      <ul>
+        <li><a href="#categories">菜式分类</a></li>
+        <li><a href="#recipes">推荐菜谱</a></li>
+        <li><a href="#steps">做法步骤</a></li>
+        <li><a href="#ingredients">选材对照</a></li>
+        <li><a href="#tips">调味技巧</a></li>
+        <li><a href="#faq">常见问题</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main>
+
+  <!-- 首屏 -->
+  <section class="hero">
+    <div>
+      <h1>私房菜做法：<em>从选材到出锅</em>，在家做出有个人风味的家常菜</h1>
+      <p class="hero-lead">
+        私房菜并不是某一类固定菜系，它更强调“按自己的口味调整”——同样的食材，因为火候、下料顺序和调味比例的差别，会呈现完全不同的结果。这里把常见的私房菜做法拆成可复用的思路：先确定主料与配料的搭配逻辑，再掌握火候与调味的先后顺序，最后根据自家灶具和口味做微调。
+      </p>
+      <div class="hero-tags">
+        <span>家常热菜</span>
+        <span>汤羹炖品</span>
+        <span>凉拌小菜</span>
+        <span>主食点心</span>
+        <span>调味思路</span>
+      </div>
+      <div class="hero-actions">
+        <a class="btn btn-primary" href="#recipes">查看推荐菜谱</a>
+        <a class="btn btn-ghost" href="#steps">了解做法步骤</a>
+      </div>
+    </div>
+    <aside class="hero-side">
+      <h2>新手做私房菜的四步顺序</h2>
+      <ol>
+        <li><b>定主料</b>：先想清楚这道菜的主角是什么，其余都是配角。</li>
+        <li><b>定味型</b>：咸鲜、酱香、酸辣、清甜，选一个方向再下料。</li>
+        <li><b>定火候</b>：大火快炒、中火焖烧、小火慢炖，火候决定口感。</li>
+        <li><b>定顺序</b>：不易熟的先下，易出水的后放，调味分两次加。</li>
+      </ol>
+    </aside>
+  </section>
+
+  <!-- 菜式分类 -->
+  <section class="block" id="categories">
+    <div class="block-head">
+      <h2>私房菜式分类<small>按上菜场景与做法难度划分</small></h2>
+      <p>不同类别的私房菜，对火候和调味的要求差别很大，先选类别再看具体做法会更清晰。</p>
+    </div>
+    <div class="cat-grid">
+      <div class="cat-card">
+        <span class="cat-ico">🍳</span>
+        <b>快炒热菜</b>
+        <p>讲究锅气与时间控制，适合工作日晚餐。主料切配均匀是成功前提。</p>
+      </div>
+      <div class="cat-card">
+        <span class="cat-ico">🍲</span>
+        <b>焖烧炖品</b>
+        <p>依靠时间和汤汁渗透入味，容错率高，适合周末或待客时慢慢做。</p>
+      </div>
+      <div class="cat-card">
+        <span class="cat-ico">🥣</span>
+        <b>汤羹甜水</b>
+        <p>重在汤底的清与浓，食材下锅顺序直接影响汤色和口感层次。</p>
+      </div>
+      <div class="cat-card">
+        <span class="cat-ico">🥗</span>
+        <b>凉拌小菜</b>
+        <p>不经过加热或只需焯水，调味汁的比例几乎决定了整道菜的味道。</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- 推荐菜谱 -->
+  <section class="block" id="recipes">
+    <div class="block-head">
+      <h2>推荐私房菜谱<small>附关键做法与调味要点</small></h2>
+      <p>以下菜谱以“思路 + 要点”的方式呈现，方便根据自家食材和口味灵活调整。</p>
+    </div>
+    <div class="recipe-grid">
+
+      <article class="recipe-card">
+        <span class="tag">快炒 · 咸鲜</span>
+        <h3>蒜香黑椒牛柳</h3>
+        <p>牛柳提前用少量生抽、淀粉和油抓匀，是保证滑嫩的关键；黑椒要在出锅前加入，避免久炒发苦。</p>
+        <dl>
+          <dt>主料</dt>
+          <dd>牛里脊、彩椒、洋葱</dd>
+          <dt>调味顺序</dt>
+          <dd>先腌后炒，黑椒与蒜末在最后 30 秒下锅</dd>
+          <dt>火候</dt>
+          <dd>全程大火，牛柳变色即盛出，回锅再合炒</dd>
+        </dl>
+      </article>
+
+      <article class="recipe-card">
+        <span class="tag">焖烧 · 酱香</span>
+        <h3>家常红烧排骨</h3>
+        <p>排骨先焯水去浮沫，再用少量油煸出表面微焦，糖色和酱油的先后顺序决定成品颜色是否透亮。</p>
+        <dl>
+          <dt>主料</dt>
+          <dd>肋排、姜片、葱段</dd>
+          <dt>调味顺序</dt>
+          <dd>炒糖色 → 下排骨上色 → 加酱油 → 加热水焖</dd>
+          <dt>火候</dt>
+          <dd>大火烧开后转小火焖，最后大火收汁</dd>
+        </dl>
+      </article>
+
+      <article class="recipe-card">
+        <span class="tag">炖品 · 清鲜</span>
+        <h3>菌菇鸡汤</h3>
+        <p>想喝清汤就全程小火、不频繁搅动；想喝浓汤可在最后开盖大火滚几分钟，让汤体乳化变白。</p>
+        <dl>
+          <dt>主料</dt>
+          <dd>鸡腿或整鸡、干香菇、鲜口蘑</dd>
+          <dt>调味顺序</dt>
+          <dd>只放姜片和少量料酒，盐在出锅前加</dd>
+          <dt>火候</dt>
+          <dd>小火慢炖，保持汤面微微冒泡即可</dd>
+        </dl>
+      </article>
+
+      <article class="recipe-card">
+        <span class="tag">凉拌 · 酸辣</span>
+        <h3>手撕凉拌鸡丝</h3>
+        <p>鸡肉煮好后过一遍冰水，肉质会更紧实有弹性；调味汁建议先调好再淋，避免局部过咸。</p>
+        <dl>
+          <dt>主料</dt>
+          <dd>鸡胸或鸡腿、黄瓜、香菜</dd>
+          <dt>调味顺序</dt>
+          <dd>生抽、香醋、少量糖、辣椒油、蒜末拌匀后淋</dd>
+          <dt>火候</dt>
+          <dd>水微沸时下锅，煮至中心熟透即可</dd>
+        </dl>
+      </article>
+
+      <article class="recipe-card">
+        <span class="tag">汤羹 · 清甜</span>
+        <h3>番茄豆腐蛋花汤</h3>
+        <p>番茄先炒出汁再加水，汤色和味道都会更浓；蛋液要在汤微沸时沿锅边缓慢淋入。</p>
+        <dl>
+          <dt>主料</dt>
+          <dd>番茄、嫩豆腐、鸡蛋</dd>
+          <dt>调味顺序</dt>
+          <dd>番茄炒软后加盐，出锅前点几滴香油</dd>
+          <dt>火候</dt>
+          <dd>中火煮汤，淋蛋液时转小火</dd>
+        </dl>
+      </article>
+
+      <article class="recipe-card">
+        <span class="tag">主食 · 家常</span>
+        <h3>葱油拌面</h3>
+        <p>葱油是这道菜的核心：冷油下葱段，小火慢炸至葱变金黄，油里才会带上足够的葱香。</p>
+        <dl>
+          <dt>主料</dt>
+          <dd>细面、小葱、生抽、老抽</dd>
+          <dt>调味顺序</dt>
+          <dd>葱油与酱油按口味调成汁，拌面前先尝一次</dd>
+          <dt>火候</dt>
+          <dd>炸葱用小火，煮面用大火</dd>
+        </dl>
+      </article>
+
+    </div>
+  </section>
+
+  <!-- 做法步骤 -->
+  <section class="block" id="steps">
+    <div class="block-head">
+      <h2>私房菜通用做法步骤<small>适用于大多数家常菜</small></h2>
+      <p>把做菜拆成固定流程，做新菜时只要替换食材和味型，成功率会明显提高。</p>
+    </div>
+    <div class="steps-wrap">
+      <div class="step-item">
+        <b>一、备料与预处理</b>
+        <p>洗净、去皮、切配到大小一致。肉类可提前用少量盐、淀粉或蛋清抓匀；蔬菜尽量沥干水分，避免下锅后变成“水煮”。</p>
+      </div>
+      <div class="step-item">
+        <b>二、热锅与下料</b>
+        <p>锅要烧到足够热再放油，油温合适后先下香料（姜、蒜、葱、干辣椒）爆香，再放主料，避免香料焦糊。</p>
+      </div>
+      <div class="step-item">
+        <b>三、调味分次加入</b>
+        <p>底味在烹饪中途加，收尾味在出锅前加。盐加得太早容易让蔬菜出水、肉类变柴，糖和醋则适合在后期调整平衡。</p>
+      </div>
+      <div class="step-item">
+        <b>四、收汁与装盘</b>
+        <p>需要挂汁的菜可在最后淋少量水淀粉，快速翻匀后立即出锅。装盘前尝一次味道，做最后一次微调。</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- 选材对照 -->
+  <section class="block" id="ingredients">
+    <div class="block-head">
+      <h2>常见食材选材对照<small>看部位、看状态、看用途</small></h2>
+      <p>同一个食材的不同部位或状态，适合的做法并不相同，选对是成功的一半。</p>
+    </div>
+    <div class="table-wrap">
+      <table>
+        <thead>
+          <tr>
+            <th>食材</th>
+            <th>挑选要点</th>
+            <th>适合做法</th>
+            <th>注意事项</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>猪里脊</td>
+            <td>颜色淡红、纹理细、表面干爽不黏手</td>
+            <td>滑炒、糖醋、炸制</td>
+            <td>纤维细，加热时间不宜过长</td>
+          </tr>
+          <tr>
+            <td>牛腩</td>
+            <td>带少量筋膜和脂肪，切面有光泽</td>
+            <td>炖煮、红烧、煲汤</td>
+            <td>需要较长时间小火焖至软烂</td>
+          </tr>
+          <tr>
+            <td>鸡腿肉</td>
+            <td>表皮完整、按压有弹性、无异味</td>
+            <td>红烧、煎制、凉拌</td>
+            <td>比鸡胸更耐煮，适合新手</td>
+          </tr>
+          <tr>
+            <td>鲜香菇</td>
+            <td>菌盖厚实、边缘内卷、无黏滑感</td>
+            <td>炒、炖、做汤</td>
+            <td>清洗后尽量挤干水分再下锅</td>
+          </tr>
+          <tr>
+            <td>嫩豆腐</td>
+            <td>颜色均匀、轻晃有弹性、无酸味</td>
+            <td>汤羹、蒸制、凉拌</td>
+            <td>翻动要轻，避免碎块</td>
+          </tr>
+          <tr>
+            <td>小葱</td>
+            <td>葱白饱满、叶片挺立不发黄</td>
+            <td>爆香、炸葱油、点缀</td>
+            <td>炸葱油用小火，避免焦苦</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <!-- 调味技巧 -->
+  <section class="block" id="tips">
+    <div class="block-head">
+      <h2>私房菜调味与火候技巧<small>决定成品口感的细节</small></h2>
+      <p>很多家常菜失败并不是食材问题，而是调味顺序和火候控制上的小偏差。</p>
+    </div>
+    <div class="tips">
+      <div class="tip">
+        <b>先定味型再下料</b>
+        <p>开火前先想好这道菜是咸鲜、酱香还是酸辣，避免边炒边加、最后味道杂乱。</p>
+      </div>
+      <div class="tip">
+        <b>盐分两次加</b>
+        <p>中途加底味，出锅前补足咸度，能减少蔬菜出水，也让肉类口感更稳定。</p>
+      </div>
+      <div class="tip">
+        <b>糖用于平衡而非增甜</b>
+        <p>少量糖可以缓和咸味和酸味，让整体味道更圆润，不必吃出明显甜味。</p>
+      </div>
+      <div class="tip">
+        <b>淀粉水要现调现用</b>
+        <p>水淀粉放置过久会沉底分层，勾芡前重新搅匀，芡汁才会均匀透亮。</p>
+      </div>
+      <div class="tip">
+        <b>爆香用中小火</b>
+        <p>姜蒜葱和干辣椒容易焦，用中小火慢慢逼出香味，比大火猛炒更稳妥。</p>
+      </div>
+      <div class="tip">
+        <b>出锅前尝一次</b>
+        <p>锅里的味道和装盘后的感受会有差别，最后一次品尝能及时补救。</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- 常见问题 -->
+  <section class="block" id="faq">
+    <div class="block-head">
+      <h2>私房菜做法常见问题<small>新手最容易遇到的几个疑问</small></h2>
+    </div>
+    <div class="faq-layout">
+      <div class="faq-list">
+
+        <details open>
+          <summary>私房菜和普通家常菜有什么区别？</summary>
+          <p>私房菜并没有严格的菜系定义，它更强调个人化的调整：在常见家常做法的基础上，根据自己的口味偏好、手边食材和灶具条件做取舍。换句话说，家常菜是基础做法，私房菜是在这个基础上形成稳定风格的做法。</p>
+        </details>
+
+        <details>
+          <summary>做菜时总是掌握不好咸淡怎么办？</summary>
+          <p>建议把调味分成两次：烹饪中途加约七成咸度，出锅前再尝一次补齐。另外，酱油、蚝油、豆瓣酱本身含盐，计算咸度时要一并考虑，避免重复加盐。</p>
+        </details>
+
+        <details>
+          <summary>炒菜容易出水，是什么原因？</summary>
+          <p>常见原因有三个：食材清洗后没有沥干、锅温不够就下料、盐加得太早。把食材尽量控干水分，锅烧热后再放油，并推迟加盐的时间，通常就能改善。</p>
+        </details>
+
+        <details>
+          <summary>肉类怎样做才不容易柴？</summary>
+          <p>可以从三方面入手：选择带一定脂肪或筋膜的部位；切的时候逆着纹理；下锅前用少量淀粉或蛋清抓匀。此外，加热时间不宜过长，变色熟透后尽快出锅。</p>
+        </details>
+
+        <details>
+          <summary>没有某一种调料，可以替换吗？</summary>
+          <p>多数情况下可以。生抽和老抽都提供咸味与颜色，前者偏咸鲜、后者偏上色；香醋与陈醋风味不同但可互相替代。替换时先少量加入，尝过味道再决定是否补足，避免一次加多难以挽回。</p>
+        </details>
+
+        <details>
+          <summary>炖汤应该用大火还是小火？</summary>
+          <p>想得到清澈的汤，建议小火慢炖，保持汤面微微冒泡；想得到浓白的汤，可以在后期开盖用大火滚煮一段时间，让油脂和汤汁充分乳化。两种方式对应不同口感，按需要选择即可。</p>
+        </details>
+
+      </div>
+      <aside class="side-note">
+        <h3>下厨前的三个提醒</h3>
+        <ul>
+          <li>所有食材提前切配到位，避免开火后手忙脚乱。</li>
+          <li>调味料提前摆好，酱油、醋、料酒不要临时找。</li>
+          <li>第一次做新菜，调料宁少勿多，尝过再补。</li>
+        </ul>
+      </aside>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="footer-inner">
+    <div>
+      <h3>家宴私房菜谱</h3>
+      <p>整理家常私房菜的选材思路、调味方法与做法步骤，帮助你在自家厨房里做出稳定又合口味的一餐。</p>
+      <p>内容以通用烹饪经验为主，具体口味请结合个人习惯与食材实际情况调整。</p>
+    </div>
+    <div>
+      <h3>内容导航</h3>
+      <ul>
+        <li><a href="#categories">菜式分类</a></li>
+        <li><a href="#recipes">推荐菜谱</a></li>
+        <li><a href="#steps">做法步骤</a></li>
+        <li><a href="#ingredients">选材对照</a></li>
+      </ul>
+    </div>
+    <div>
+      <h3>实用参考</h3>
+      <ul>
+        <li><a href="#tips">调味与火候技巧</a></li>
+        <li><a href="#faq">常见问题</a></li>
+        <li><a href="#recipes">凉拌与汤羹做法</a></li>
+        <li><a href="#steps">新手入门流程</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    私房菜做法 · 家常烹饪经验整理与分享
+  </div>
+</footer>
+
+</body>
+      </html>
