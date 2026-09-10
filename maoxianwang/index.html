@@ -1,0 +1,631 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>冒险王卫斯理之支离人-剧情看点、角色关系与观看指南</title>
+<meta name="description" content="冒险王卫斯理之支离人剧情看点、主要角色关系、故事背景与观看顺序梳理，帮助观众快速了解这部卫斯理系列冒险作品的核心设定与追剧要点。">
+<meta name="keywords" content="冒险王卫斯理之支离人,卫斯理,支离人,冒险剧,科幻悬疑,剧情介绍,角色关系">
+<script type="text/javascript" src="https://cdn.bdwgg.com/mh.js"></script>
+<style>
+  :root{
+    --ink:#101820;
+    --ink-2:#243447;
+    --muted:#5d6b7a;
+    --line:#dde5ec;
+    --bg:#f4f7fa;
+    --card:#ffffff;
+    --accent:#0f6f8f;
+    --accent-2:#e8a33d;
+    --accent-soft:#e6f2f6;
+    --radius:14px;
+    --shadow:0 8px 26px rgba(16,24,32,.08);
+    --max:1180px;
+  }
+  *{box-sizing:border-box;}
+  html{scroll-behavior:smooth;}
+  body{
+    margin:0;
+    font-family:"PingFang SC","Hiragino Sans GB","Microsoft YaHei","Helvetica Neue",Arial,sans-serif;
+    background:var(--bg);
+    color:var(--ink);
+    line-height:1.75;
+    font-size:16px;
+    -webkit-font-smoothing:antialiased;
+  }
+  a{color:inherit;text-decoration:none;}
+  img{max-width:100%;display:block;}
+  h1,h2,h3,h4{margin:0;line-height:1.35;font-weight:700;}
+  p{margin:0 0 14px;}
+  ul{margin:0;padding:0;list-style:none;}
+
+  .wrap{max-width:var(--max);margin:0 auto;padding:0 20px;}
+
+  /* ---------- 顶部导航 ---------- */
+  .site-header{
+    position:sticky;top:0;z-index:50;
+    background:rgba(16,24,32,.94);
+    backdrop-filter:blur(8px);
+    border-bottom:1px solid rgba(255,255,255,.08);
+  }
+  .header-inner{
+    display:flex;align-items:center;gap:24px;
+    min-height:64px;
+  }
+  .brand{
+    display:flex;align-items:center;gap:10px;
+    color:#fff;font-weight:700;font-size:18px;letter-spacing:.5px;
+    white-space:nowrap;
+  }
+  .brand .mark{
+    width:30px;height:30px;border-radius:8px;
+    background:linear-gradient(135deg,var(--accent),#1aa3c9);
+    display:flex;align-items:center;justify-content:center;
+    font-size:15px;color:#fff;font-weight:800;
+  }
+  .main-nav{margin-left:auto;}
+  .main-nav ul{display:flex;gap:6px;flex-wrap:wrap;}
+  .main-nav a{
+    display:block;padding:8px 14px;border-radius:8px;
+    color:#c9d6e2;font-size:15px;transition:.2s;
+  }
+  .main-nav a:hover,.main-nav a:focus{background:rgba(255,255,255,.1);color:#fff;}
+
+  /* ---------- 首屏 ---------- */
+  .hero{
+    background:
+      radial-gradient(900px 420px at 82% -10%,rgba(26,163,201,.35),transparent 60%),
+      radial-gradient(700px 380px at 8% 110%,rgba(232,163,61,.22),transparent 60%),
+      linear-gradient(160deg,#0d1a24 0%,#132a38 55%,#0f2230 100%);
+    color:#eaf2f7;
+    padding:64px 0 56px;
+    position:relative;
+    overflow:hidden;
+  }
+  .hero::after{
+    content:"";position:absolute;right:-120px;top:-120px;
+    width:380px;height:380px;border-radius:50%;
+    border:1px solid rgba(255,255,255,.09);
+  }
+  .hero-grid{
+    display:grid;grid-template-columns:1.35fr 1fr;gap:44px;align-items:center;
+    position:relative;z-index:2;
+  }
+  .hero .tag{
+    display:inline-block;
+    background:rgba(232,163,61,.16);
+    border:1px solid rgba(232,163,61,.5);
+    color:#f2c37a;
+    font-size:13px;letter-spacing:1px;
+    padding:4px 12px;border-radius:999px;margin-bottom:18px;
+  }
+  .hero h1{
+    font-size:clamp(26px,4vw,40px);
+    letter-spacing:.5px;
+    margin-bottom:16px;
+  }
+  .hero h1 span{color:#7fd0e8;}
+  .hero p.lead{
+    color:#b9cbd8;font-size:16.5px;max-width:640px;margin-bottom:24px;
+  }
+  .hero-actions{display:flex;gap:12px;flex-wrap:wrap;}
+  .btn{
+    display:inline-block;padding:11px 24px;border-radius:10px;
+    font-size:15px;font-weight:600;transition:.2s;cursor:pointer;border:1px solid transparent;
+  }
+  .btn-primary{background:var(--accent);color:#fff;}
+  .btn-primary:hover{background:#0b5b76;}
+  .btn-ghost{border-color:rgba(255,255,255,.35);color:#e6eef4;}
+  .btn-ghost:hover{background:rgba(255,255,255,.1);}
+
+  .hero-panel{
+    background:rgba(255,255,255,.06);
+    border:1px solid rgba(255,255,255,.14);
+    border-radius:var(--radius);
+    padding:22px 22px 18px;
+  }
+  .hero-panel h3{font-size:15px;color:#8fb6c9;letter-spacing:1px;margin-bottom:14px;font-weight:600;}
+  .hero-panel ul li{
+    display:flex;justify-content:space-between;gap:12px;
+    padding:9px 0;border-bottom:1px dashed rgba(255,255,255,.13);
+    font-size:14.5px;color:#d3e0e9;
+  }
+  .hero-panel ul li:last-child{border-bottom:none;}
+  .hero-panel ul li b{color:#fff;font-weight:600;}
+
+  /* ---------- 通用区块 ---------- */
+  section{padding:56px 0;}
+  .section-head{margin-bottom:30px;}
+  .section-head .kicker{
+    color:var(--accent);font-size:13px;font-weight:700;letter-spacing:2px;
+    text-transform:uppercase;display:block;margin-bottom:8px;
+  }
+  .section-head h2{font-size:clamp(21px,2.6vw,27px);}
+  .section-head p{color:var(--muted);margin-top:10px;max-width:760px;font-size:15.5px;}
+
+  .alt-bg{background:#fff;}
+
+  /* ---------- 剧情简介 ---------- */
+  .intro-grid{
+    display:grid;grid-template-columns:1.6fr 1fr;gap:36px;
+  }
+  .intro-text p{color:#33465a;font-size:16px;}
+  .intro-text strong{color:var(--ink);}
+  .fact-card{
+    background:var(--accent-soft);
+    border:1px solid #cfe6ee;
+    border-radius:var(--radius);
+    padding:22px;
+    align-self:start;
+  }
+  .fact-card h3{font-size:16px;margin-bottom:14px;color:var(--ink-2);}
+  .fact-card dl{margin:0;font-size:14.5px;}
+  .fact-card dt{color:var(--muted);font-size:13px;margin-top:12px;}
+  .fact-card dt:first-child{margin-top:0;}
+  .fact-card dd{margin:2px 0 0;color:var(--ink);font-weight:600;}
+
+  /* ---------- 角色 ---------- */
+  .cast-grid{
+    display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:20px;
+  }
+  .cast-card{
+    background:var(--card);border:1px solid var(--line);border-radius:var(--radius);
+    padding:22px;box-shadow:var(--shadow);transition:.25s;
+  }
+  .cast-card:hover{transform:translateY(-4px);border-color:#bcd8e4;}
+  .cast-card .avatar{
+    width:46px;height:46px;border-radius:12px;
+    background:linear-gradient(135deg,#0f6f8f,#2ba6c9);
+    color:#fff;font-weight:800;font-size:18px;
+    display:flex;align-items:center;justify-content:center;margin-bottom:14px;
+  }
+  .cast-card h3{font-size:17px;margin-bottom:4px;}
+  .cast-card .role{font-size:13px;color:var(--accent);font-weight:600;margin-bottom:10px;}
+  .cast-card p{font-size:14.5px;color:var(--muted);margin:0;}
+
+  /* ---------- 看点列表 ---------- */
+  .highlight-list{
+    display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:22px;
+  }
+  .highlight-item{
+    background:var(--card);border-left:4px solid var(--accent-2);
+    border-radius:10px;padding:20px 22px;
+    box-shadow:var(--shadow);
+  }
+  .highlight-item h3{font-size:16.5px;margin-bottom:8px;}
+  .highlight-item p{font-size:14.5px;color:var(--muted);margin:0;}
+
+  /* ---------- 观看顺序 / 时间线 ---------- */
+  .timeline{position:relative;padding-left:26px;}
+  .timeline::before{
+    content:"";position:absolute;left:6px;top:6px;bottom:6px;width:2px;
+    background:linear-gradient(180deg,var(--accent),#cfe6ee);
+  }
+  .timeline li{position:relative;margin-bottom:22px;}
+  .timeline li::before{
+    content:"";position:absolute;left:-26px;top:8px;
+    width:12px;height:12px;border-radius:50%;
+    background:#fff;border:3px solid var(--accent);
+  }
+  .timeline h3{font-size:16px;margin-bottom:4px;}
+  .timeline p{font-size:14.5px;color:var(--muted);margin:0;}
+
+  /* ---------- 表格 ---------- */
+  .table-wrap{overflow-x:auto;border-radius:var(--radius);border:1px solid var(--line);background:#fff;}
+  table{width:100%;border-collapse:collapse;min-width:560px;font-size:14.5px;}
+  thead th{
+    background:#eef4f7;color:var(--ink-2);text-align:left;
+    padding:13px 16px;font-weight:700;white-space:nowrap;
+  }
+  tbody td{padding:13px 16px;border-top:1px solid var(--line);color:#3b4d5f;vertical-align:top;}
+  tbody tr:hover{background:#f9fbfc;}
+
+  /* ---------- FAQ ---------- */
+  .faq{max-width:860px;}
+  .faq details{
+    background:#fff;border:1px solid var(--line);border-radius:12px;
+    padding:16px 20px;margin-bottom:12px;transition:.2s;
+  }
+  .faq details[open]{border-color:#b8d9e5;box-shadow:var(--shadow);}
+  .faq summary{
+    cursor:pointer;font-weight:600;font-size:15.5px;color:var(--ink-2);
+    list-style:none;display:flex;justify-content:space-between;gap:14px;align-items:center;
+  }
+  .faq summary::-webkit-details-marker{display:none;}
+  .faq summary::after{
+    content:"+";font-size:20px;color:var(--accent);font-weight:400;line-height:1;
+  }
+  .faq details[open] summary::after{content:"–";}
+  .faq details p{margin:12px 0 0;font-size:14.8px;color:var(--muted);}
+
+  /* ---------- 侧栏提示条 ---------- */
+  .notice{
+    background:#fff8ec;border:1px solid #f3ddb5;border-radius:var(--radius);
+    padding:20px 24px;display:flex;gap:16px;align-items:flex-start;
+  }
+  .notice .icon{
+    flex:0 0 34px;height:34px;border-radius:9px;background:var(--accent-2);
+    color:#fff;font-weight:800;display:flex;align-items:center;justify-content:center;font-size:16px;
+  }
+  .notice h3{font-size:15.5px;margin-bottom:6px;}
+  .notice p{font-size:14.5px;color:#7a6335;margin:0;}
+
+  /* ---------- 页脚 ---------- */
+  .site-footer{
+    background:#0d1a24;color:#93a8b8;padding:44px 0 26px;font-size:14.5px;
+  }
+  .footer-grid{
+    display:grid;grid-template-columns:1.6fr 1fr 1fr;gap:32px;margin-bottom:30px;
+  }
+  .site-footer h4{color:#e6eef4;font-size:15px;margin-bottom:14px;}
+  .site-footer p{color:#8fa4b4;font-size:14px;margin:0;}
+  .site-footer li{margin-bottom:9px;}
+  .site-footer a{color:#a9bdcc;transition:.2s;}
+  .site-footer a:hover{color:#fff;}
+  .footer-bottom{
+    border-top:1px solid rgba(255,255,255,.1);padding-top:18px;
+    display:flex;justify-content:space-between;gap:14px;flex-wrap:wrap;
+    font-size:13.5px;color:#7b90a0;
+  }
+
+  /* ---------- 响应式 ---------- */
+  @media (max-width:960px){
+    .hero-grid{grid-template-columns:1fr;gap:30px;}
+    .intro-grid{grid-template-columns:1fr;}
+    .footer-grid{grid-template-columns:1fr 1fr;}
+  }
+  @media (max-width:640px){
+    body{font-size:15.5px;}
+    .header-inner{flex-wrap:wrap;padding:10px 0;gap:10px;}
+    .main-nav{margin-left:0;width:100%;}
+    .main-nav ul{gap:2px;}
+    .main-nav a{padding:7px 10px;font-size:14px;}
+    .hero{padding:44px 0 40px;}
+    section{padding:40px 0;}
+    .footer-grid{grid-template-columns:1fr;}
+    .notice{flex-direction:column;gap:10px;}
+  }
+</style>
+</head>
+<body>
+
+<header class="site-header">
+  <div class="wrap header-inner">
+    <a class="brand" href="#top">
+      <span class="mark">卫</span>
+      卫斯理冒险档案
+    </a>
+    <nav class="main-nav" aria-label="主导航">
+      <ul>
+        <li><a href="#intro">剧情简介</a></li>
+        <li><a href="#cast">角色关系</a></li>
+        <li><a href="#highlights">看点解析</a></li>
+        <li><a href="#order">观看顺序</a></li>
+        <li><a href="#faq">常见问题</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main id="top">
+
+  <!-- 首屏 -->
+  <section class="hero" aria-label="作品概览">
+    <div class="wrap hero-grid">
+      <div>
+        <span class="tag">卫斯理系列 · 冒险科幻悬疑</span>
+        <h1>冒险王卫斯理之<span>支离人</span>：从离奇肢解谜案看整部系列</h1>
+        <p class="lead">
+          《冒险王卫斯理之支离人》是卫斯理系列影视化作品中以“人体支离”为核心谜题的一部。故事围绕一具可以被拆解、又能重新组合的身体展开，把科幻设想与悬疑追查拧在一起。本页梳理它的剧情脉络、人物关系、核心设定与观看建议，帮你在开播前或追剧途中快速建立整体认知。
+        </p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="#intro">先看剧情简介</a>
+          <a class="btn btn-ghost" href="#cast">了解角色关系</a>
+        </div>
+      </div>
+      <aside class="hero-panel" aria-label="作品速览">
+        <h3>速览信息</h3>
+        <ul>
+          <li><span>作品类型</span><b>冒险 / 科幻 / 悬疑</b></li>
+          <li><span>故事来源</span><b>卫斯理系列小说改编</b></li>
+          <li><span>核心谜题</span><b>可分离的人体</b></li>
+          <li><span>主角身份</span><b>冒险家卫斯理</b></li>
+          <li><span>叙事重心</span><b>调查 + 解谜 + 对抗</b></li>
+        </ul>
+      </aside>
+    </div>
+  </section>
+
+  <!-- 剧情简介 -->
+  <section id="intro">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="kicker">Story</span>
+        <h2>剧情简介：一桩关于“支离”的离奇事件</h2>
+        <p>如果你只想知道这部作品讲什么，先看这一节就够了。下面的内容以设定和主线方向为主，尽量避免直接剧透关键转折。</p>
+      </div>
+
+      <div class="intro-grid">
+        <div class="intro-text">
+          <p>
+            卫斯理系列的主人公卫斯理，是一个常被卷入超常事件、又习惯用理性去拆解怪事的冒险者。《冒险王卫斯理之支离人》延续了这一人物设定：当一具身体能够被拆解成若干部分、各自行动甚至重新拼合时，常规的医学与物理常识都被推翻，事件也因此从一桩怪谈升级为必须介入调查的危机。
+          </p>
+          <p>
+            “支离”这个词，本身就指向故事的核心——<strong>完整的人体被拆散，却仍然保有某种活性与意志</strong>。这种设定天然带有两层张力：一层是视觉与生理上的不安，另一层是“人之所以为人”的边界问题。当身体不再是一个不可分割的整体，身份、记忆与意识究竟依附在哪里，就成了故事真正想追问的东西。
+          </p>
+          <p>
+            在结构上，这类故事通常遵循一条清晰的推进线：先是异常现象出现，接着是相关人物的失踪或死亡，卫斯理因缘际会介入，随后在调查中逐步接触到背后的组织、实验或外来力量，最后在一场正面对抗中揭开真相。阅读或观看时，可以留意每一次“身体被拆开”的场面，它们往往同时承担着惊吓与线索两种功能。
+          </p>
+          <p>
+            与纯恐怖作品不同，卫斯理系列的底色更偏向<strong>冒险与推理</strong>。怪异现象不是终点，而是需要被解释的对象。因此观看过程中不必急于把“支离人”当成鬼怪，它更像是一个待解的科技或超自然命题，答案通常藏在人物动机与事件前史里。
+          </p>
+        </div>
+
+        <aside class="fact-card">
+          <h3>阅读与观看提示</h3>
+          <dl>
+            <dt>适合人群</dt>
+            <dd>喜欢冒险解谜、科幻设定与悬疑推进的观众</dd>
+            <dt>内容基调</dt>
+            <dd>悬疑为主，含少量惊悚与身体异变描写</dd>
+            <dt>理解关键</dt>
+            <dd>把“支离”当作设定而非单纯恐怖元素</dd>
+            <dt>建议心态</dt>
+            <dd>跟着主角一起推理，而不是只等答案</dd>
+          </dl>
+        </aside>
+      </div>
+    </div>
+  </section>
+
+  <!-- 角色关系 -->
+  <section id="cast" class="alt-bg">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="kicker">Characters</span>
+        <h2>角色关系：谁在追查，谁在隐瞒</h2>
+        <p>卫斯理系列的人物往往分成三类：调查者、被卷入者，以及掌握真相却不愿开口的人。理解这三层关系，剧情会顺畅很多。</p>
+      </div>
+
+      <div class="cast-grid">
+        <article class="cast-card">
+          <div class="avatar">卫</div>
+          <h3>卫斯理</h3>
+          <div class="role">冒险家 · 调查者</div>
+          <p>故事的视角人物。习惯用逻辑和行动力处理怪事，面对“支离人”这类超出常识的现象时，他的价值在于不断逼近真相，而不是被动接受解释。</p>
+        </article>
+
+        <article class="cast-card">
+          <div class="avatar">白</div>
+          <h3>白素</h3>
+          <div class="role">关键同伴 · 得力协助</div>
+          <p>在卫斯理系列中常与主角并肩行动，判断冷静、行动果断。她的存在让调查不至于变成单人冒险，也常在其他角色情绪失控时提供理性支点。</p>
+        </article>
+
+        <article class="cast-card">
+          <div class="avatar">支</div>
+          <h3>支离人</h3>
+          <div class="role">核心谜题 · 异常存在</div>
+          <p>身体可被拆解、分离后仍能活动的存在。它既是威胁，也是谜面本身。它的行为逻辑与真实目的，是整部作品最值得留意的部分。</p>
+        </article>
+
+        <article class="cast-card">
+          <div class="avatar">幕</div>
+          <h3>幕后相关者</h3>
+          <div class="role">知情者 · 阻力来源</div>
+          <p>包括参与过相关事件的人、掌握资料却选择沉默的机构或个体。他们提供线索，也制造阻碍，是推动剧情反转的重要力量。</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- 看点解析 -->
+  <section id="highlights">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="kicker">Highlights</span>
+        <h2>看点解析：这部作品值得看的地方</h2>
+        <p>不靠堆砌形容词，只讲清楚它在设定、节奏和主题上分别提供了什么。</p>
+      </div>
+
+      <div class="highlight-list">
+        <article class="highlight-item">
+          <h3>设定足够抓人</h3>
+          <p>“身体可以被拆开又重组”是一个视觉冲击力强、又便于延展出多重谜团的设定。它让每一场戏都可能藏着线索，而不是单纯的过场。</p>
+        </article>
+
+        <article class="highlight-item">
+          <h3>悬疑与冒险并行</h3>
+          <p>调查线负责推进信息，冒险线负责维持张力。两条线交替出现，让故事不会长时间停留在解释说明上，也不会只有动作没有内容。</p>
+        </article>
+
+        <article class="highlight-item">
+          <h3>主题有讨论空间</h3>
+          <p>当身体不再完整，人的身份由什么决定？这类问题让作品在娱乐之外，留下一层可以回味的余地，也方便观众在看完后继续讨论。</p>
+        </article>
+
+        <article class="highlight-item">
+          <h3>人物动机清晰</h3>
+          <p>卫斯理系列的长处之一，是让每个关键人物都有可理解的行为逻辑。看懂谁想要什么，很多看似突兀的转折就会变得顺理成章。</p>
+        </article>
+
+        <article class="highlight-item">
+          <h3>适合系列式观看</h3>
+          <p>即使没看过其他卫斯理作品，也能从这一部进入。人物关系相对独立，设定自洽，作为系列中的一集或一部来观看门槛不高。</p>
+        </article>
+
+        <article class="highlight-item">
+          <h3>节奏张弛有度</h3>
+          <p>调查、对峙、揭示三段式结构反复出现，每一轮都会给出新信息。只要留意每次信息更新，就能跟上整体推进。</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- 观看顺序 -->
+  <section id="order" class="alt-bg">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="kicker">Guide</span>
+        <h2>观看顺序与理解路径</h2>
+        <p>不同观众进入卫斯理系列的方式不一样。下面给出几种常见路径，按自己的习惯选即可。</p>
+      </div>
+
+      <ol class="timeline">
+        <li>
+          <h3>第一次接触：先看这一部</h3>
+          <p>《支离人》设定独立、谜题集中，适合作为入坑点。看完后再回头补系列中的其他故事，理解成本更低。</p>
+        </li>
+        <li>
+          <h3>想系统了解：按系列顺序</h3>
+          <p>如果希望完整感受卫斯理的人物成长与世界观，可以按系列作品的推出顺序观看，把这一部放在对应位置。</p>
+        </li>
+        <li>
+          <h3>只想看悬疑：关注调查线</h3>
+          <p>可以重点留意每次线索出现的时间点，把“支离人”的行为当作信息载体来解读，观感会更接近推理作品。</p>
+        </li>
+        <li>
+          <h3>看完之后：再读原著</h3>
+          <p>影视与文字在细节呈现上各有侧重。看完后再读原作，往往能补上影像难以交代的心理描写与背景设定。</p>
+        </li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- 设定对比表 -->
+  <section id="compare">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="kicker">Setting</span>
+        <h2>核心设定对照：从常识到异常</h2>
+        <p>把作品中的几个关键设定与日常认知放在一起对照，更容易看清它到底在挑战什么。</p>
+      </div>
+
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr>
+              <th>维度</th>
+              <th>日常认知</th>
+              <th>作品中的设定</th>
+              <th>带来的悬念</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>身体完整性</td>
+              <td>人体不可分割</td>
+              <td>可被拆解并重新组合</td>
+              <td>分离后是否仍有意识</td>
+            </tr>
+            <tr>
+              <td>身份归属</td>
+              <td>身份依附于完整个体</td>
+              <td>身份可能分散在多个部分</td>
+              <td>哪一个才是“本人”</td>
+            </tr>
+            <tr>
+              <td>行动逻辑</td>
+              <td>行为由大脑统一指挥</td>
+              <td>各部分可能独立行动</td>
+              <td>谁在真正做决定</td>
+            </tr>
+            <tr>
+              <td>危险来源</td>
+              <td>外部威胁为主</td>
+              <td>异常本身即是威胁</td>
+              <td>如何界定敌我</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <!-- 注意事项 -->
+  <section class="alt-bg" aria-label="观看注意事项">
+    <div class="wrap">
+      <div class="notice">
+        <div class="icon">!</div>
+        <div>
+          <h3>观看前的小提醒</h3>
+          <p>作品涉及身体异变与悬疑惊悚元素，对相关画面较为敏感的观众建议先了解大致风格再决定是否观看。另外，剧情中的设定属于虚构创作，请勿与现实中的医学、生物现象直接对应。</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section id="faq">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="kicker">FAQ</span>
+        <h2>常见问题</h2>
+        <p>整理观众在了解这部作品时最常提出的几个问题，答案以稳妥、可核对的信息为准。</p>
+      </div>
+
+      <div class="faq">
+        <details open>
+          <summary>《冒险王卫斯理之支离人》属于什么类型的作品？</summary>
+          <p>它属于卫斯理系列中的冒险科幻悬疑作品，以离奇现象为起点，通过主角的调查逐步揭示背后的设定与真相。整体基调偏冒险与解谜，而非纯粹的恐怖或爱情题材。</p>
+        </details>
+
+        <details>
+          <summary>没看过卫斯理其他作品，能直接看这一部吗？</summary>
+          <p>可以。卫斯理系列的各部故事通常围绕独立事件展开，人物关系相对稳定但不需要前置知识。直接从这一部进入，理解上不会有明显障碍。</p>
+        </details>
+
+        <details>
+          <summary>“支离人”到底指什么？</summary>
+          <p>“支离”指的是身体被拆散、分离的状态。作品中的支离人，是一个身体可以被分解又重新组合的异常存在。它的具体来源与目的属于剧情核心，需要随着故事推进才能完整了解。</p>
+        </details>
+
+        <details>
+          <summary>观看时应该重点关注哪些内容？</summary>
+          <p>建议关注三点：一是每次异常现象出现时给出的细节，二是关键人物对事件的反应与隐瞒，三是主角如何把零散线索串成完整逻辑。这三点基本对应了剧情的主要推进方式。</p>
+        </details>
+
+        <details>
+          <summary>这部作品适合什么年龄段的观众？</summary>
+          <p>由于包含身体异变与悬疑惊悚元素，更适合对这类题材有一定接受度的观众。年龄较小的观众建议在成年人陪同下观看，或先了解内容风格后再决定。</p>
+        </details>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="footer-grid">
+      <div>
+        <h4>卫斯理冒险档案</h4>
+        <p>专注整理卫斯理系列作品的剧情脉络、人物关系与观看指引，帮助观众更顺畅地进入冒险与解谜的世界。</p>
+      </div>
+      <div>
+        <h4>内容导航</h4>
+        <ul>
+          <li><a href="#intro">剧情简介</a></li>
+          <li><a href="#cast">角色关系</a></li>
+          <li><a href="#highlights">看点解析</a></li>
+          <li><a href="#order">观看顺序</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>相关主题</h4>
+        <ul>
+          <li><a href="#compare">核心设定对照</a></li>
+          <li><a href="#faq">常见问题</a></li>
+          <li><a href="#top">返回顶部</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>本站内容为作品信息整理与观看指引，具体剧情以官方播出内容为准。</span>
+      <span>卫斯理系列 · 冒险科幻悬疑</span>
+    </div>
+  </div>
+</footer>
+
+</body>
+  </html>
